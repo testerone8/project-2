@@ -28,6 +28,7 @@ import PaymentForm from './components/PaymentForm';
 import DomainOrderForm from './components/DomainOrderForm';
 import ThemeToggle from './components/ThemeToggle';
 import HostingPlans from './components/HostingPlans';
+import DomainTLDList from './components/DomainTLDList';
 
 function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -202,6 +203,7 @@ function App() {
                 <a href="#home" className={`${currentTheme.textSecondary} hover:text-purple-400 transition-colors`}>Home</a>
                 <a href="#hosting" className={`${currentTheme.textSecondary} hover:text-purple-400 transition-colors`}>Hosting</a>
                 <a href="#domains" className={`${currentTheme.textSecondary} hover:text-purple-400 transition-colors`}>Domains</a>
+                <a href="#tlds" className={`${currentTheme.textSecondary} hover:text-purple-400 transition-colors`}>Extensions</a>
                 <a href="#about" className={`${currentTheme.textSecondary} hover:text-purple-400 transition-colors`}>About</a>
               </div>
             </div>
@@ -456,6 +458,11 @@ function App() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Domain TLD List Section */}
+      <section id="tlds">
+        <DomainTLDList theme={theme} />
       </section>
 
       {/* Footer */}
