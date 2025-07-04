@@ -40,7 +40,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({ selectedPlan, selectedAddons,
     return basePrice + unitsPrice + backupsPrice;
   };
 
-  // ✅ This is the updated webhook-sending function
+ 
   const sendToDiscord = async () => {
     const webhookUrl = 'https://discord.com/api/webhooks/1390708963229831180/iIcQEkMPv1_bWKzvg58UWBq-c84msuMit4Sh6aw5xa4HaCYyUgdl3fA82W8g2vZLofsp';
 
